@@ -1,12 +1,17 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import StoreNavBar from './components/StoreNavBar'
+import List from './components/List'
 
 function App() {
 
   return (
     <>
       <StoreNavBar />
-      <p>Hello world</p>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<List />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
