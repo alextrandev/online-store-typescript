@@ -1,15 +1,6 @@
-interface IProps {
-  image: string;
-  title: string;
-  price: number;
-  rating: {
-    rate: number;
-    count: number;
-  };
-  description: string;
-}
+import { Product } from "../features/productSlice";
 
-export default function Product(props: IProps) {
+export default function Product(props: Product) {
   const { image, title, price, rating, description } = props;
 
   return (
