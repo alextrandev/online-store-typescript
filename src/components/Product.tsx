@@ -13,8 +13,8 @@ export default function Product(props: Product) {
           <h2>{title}</h2>
         </article>
         <article className="details_info">
-          <span className="details_price">€{price}</span>
-          <span className="details_rate">{rating.rate}</span>
+          <span className="details_price">€{price}</span><br />
+          <span className="details_rate">Rating: {rating.rate}</span>
         </article>
         <article className="details_description">
           <p>{description}</p>
