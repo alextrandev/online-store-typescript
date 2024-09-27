@@ -1,7 +1,10 @@
 import { Action, ThunkAction, configureStore } from "@reduxjs/toolkit";
+import productReducer from "./features/productSlice"
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    products: productReducer
+  },
 })
 
 // take the store.getState and return it to generate/infer the type of the state
